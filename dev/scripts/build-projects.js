@@ -148,14 +148,6 @@ function validateProject(project, folderName) {
     }
   }
 
-  // stars (optional)
-  if ("stars" in project) {
-    if (!Number.isInteger(project.stars)) {
-      errors.push(`"stars" must be an integer`);
-    } else if (project.stars < 0) {
-      errors.push(`"stars" must be non-negative`);
-    }
-  }
 
   return errors;
 }

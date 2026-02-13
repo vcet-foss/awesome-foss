@@ -93,11 +93,6 @@
       },
       "uniqueItems": true,
       "description": "Project domain/category tags"
-    },
-    "stars": {
-      "type": "integer",
-      "minimum": 0,
-      "description": "GitHub repository star count"
     }
   },
   "additionalProperties": false

@@ -82,8 +82,7 @@ Include: what it does, tech stack, how to get started, and how to contribute.
     }
   ],
   "looking_for_contributors": true,
-  "domain": ["Web"],
-  "stars": 0
+  "domain": ["Web"]
 }
 ```
 
@@ -102,7 +101,6 @@ Include: what it does, tech stack, how to get started, and how to contribute.
 | `maintainers` | object[] | ✅ | At least one `{ name, contact }` |
 | `looking_for_contributors` | boolean | ✅ | `true` or `false` |
 | `domain` | string[] | ❌ | One or more of: `Web`, `AI/ML`, `GenAI`, `Blockchain`, `IoT/Embedded` |
-| `stars` | number | ❌ | Non-negative integer (GitHub star count) |
 
 ## Testing Locally
 
