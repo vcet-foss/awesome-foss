@@ -6,9 +6,7 @@
 
 ### Step 1: Follow the VCET FOSS Organization
 
-<video src="dev/assets/tutorial/video1.mp4" autoplay muted loop playsinline controls>
-    How to follow the VCET FOSS organization
-</video>
+[video1.webm](https://github.com/user-attachments/assets/8b2664d0-81cd-4d9a-ae23-e93e65e06c7a)
 
 #### Instructions:
 
@@ -21,10 +19,7 @@
 
 ### Step 2: Star the Repository
 
-<video src="dev/assets/tutorial/video2.mp4" autoplay muted loop playsinline controls>
-    How to star the awesome-foss repository
-</video>
-
+[video2.webm](https://github.com/user-attachments/assets/c06cfe93-45e6-49ae-a87c-088c31fb3252)
 #### Instructions:
 
 1. Go to the [awesome-foss repository](https://github.com/vcet-foss/awesome-foss)
@@ -36,9 +31,7 @@
 
 ### Step 3: Fork the Repository
 
-<video src="dev/assets/tutorial/video3.mp4" autoplay muted loop playsinline controls>
-    How to fork the awesome-foss repository
-</video>
+[video3.webm](https://github.com/user-attachments/assets/6c099dcc-04b4-4a24-b718-290730ba9a8f)
 
 #### Instructions:
 
@@ -85,9 +78,7 @@ Your **slug** is your project's unique identifier.
 
 ### Step 6: Create Your Project Folder & Files
 
-<video src="dev/assets/tutorial/video4.mp4" autoplay muted loop playsinline controls>
-    How to add project in /project section
-</video>
+[video4.webm](https://github.com/user-attachments/assets/afe8be8a-0335-4d66-ace4-5aa2131db356)
 
 #### Instructions:
 
@@ -100,9 +91,7 @@ Your **slug** is your project's unique identifier.
 
 ### Step 7: Fill in project.json
 
-<video src="dev/assets/tutorial/video5.mp4" autoplay muted loop playsinline controls>
-    How to create project.json file and add content
-</video>
+[video5.webm](https://github.com/user-attachments/assets/20a2cfc2-0912-4bcc-81fe-a9c96ea6cd7c)
 
 #### Instructions:
 
@@ -139,9 +128,7 @@ Paste the following template into the new file you just created:
 
 ### Step 8: Add README.md
 
-<video src="dev/assets/tutorial/video6.mp4" autoplay muted loop playsinline controls>
-    How to create README.md file and add content
-</video>
+[video6.webm](https://github.com/user-attachments/assets/0a035bce-fbe0-4b20-8a7e-6eef36021bcf)
 
 #### Instructions:
 
@@ -157,9 +144,7 @@ Paste the following template into the new file you just created:
 
 ### Step 9: Open a Pull Request
 
-<video src="dev/assets/tutorial/video7.mp4" autoplay muted loop playsinline controls>
-    How to make a pull request to add your project
-</video>
+[video7.webm](https://github.com/user-attachments/assets/7e609f3b-822f-4cd6-adf6-0e863ad6c241)
 
 #### Instructions:
 
