@@ -1,0 +1,35 @@
+{
+  "slug": "atom8",
+  "name": "ATOM8: AI-Powered Data Structurizer & Insights Platform",
+  "tagline": "AI platform for structuring messy and scattered data",
+  "description": "Atom8 converts scattered and unstructured data into clean, structured JSON/CSV using advanced LLMs and generates AI-powered data analysis reports.",
+  "status": "active",
+  "difficulty": "intermediate",
+  "tech_stack": [
+    "TypeScript",
+    "Next.js 15",
+    "Groq",
+    "Gemini",
+    "Pandas",
+    "ReportLab"
+  ],
+  "github_repo": "https://github.com/riteshgharat/atom8",
+  "maintainers": [
+    {
+      "name": "Ritesh Gharat",
+      "contact": "https://github.com/riteshgharat"
+    },{
+      "name": "Prashant Dhuri",
+      "contact": "https://github.com/PrashantDhuri08"
+    },{
+      "name": "Prem Chaurasiya",
+      "contact": "https://github.com/PremChaurasiya07"
+    },
+    {
+      "name": "Suyash Dhulap",
+      "contact": "https://github.com/7suyash"
+    }
+  ],
+  "looking_for_contributors": true,
+  "domain": ["Web", "AI/ML"]
+}
