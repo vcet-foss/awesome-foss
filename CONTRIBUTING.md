@@ -1,191 +1,175 @@
 # Contributing to VCET FOSS Directory
 
-> **"Your first PR doesn't need to be perfect."**
+Welcome to the VCET FOSS Directory! This document explains how the repository works and provides guidelines for contributors and maintainers.
 
-Thanks for wanting to contribute! This guide covers everything you need.
+## Want to Add Your Project?
+
+> **→ See [ADD_PROJECT.md](ADD_PROJECT.md) for step-by-step guide to submit your project to the VCET FOSS Directory**
 
 ## Contents
 
-- [How It Works](#how-it-works)
-- [Who Can Contribute](#who-can-contribute)
-- [Adding a Project](#adding-a-project)
-- [project.json Template](#projectjson-template)
-- [Field Reference](#field-reference)
-- [Testing Locally](#testing-locally)
-- [Opening a PR](#opening-a-pr)
-- [Repo Structure](#repo-structure)
+- [Who Can Contribute?](#who-can-contribute)
+- [How This Repository Works](#how-this-repository-works)
+- [Repository Structure](#repository-structure)
 - [For Maintainers](#for-maintainers)
-- [What NOT to Do](#what-not-to-do)
-- [Getting Help](#getting-help)
-- [Code of Conduct](#code-of-conduct)
-
-## How It Works
-
-```
-Students / Teams
-   ↓ (Pull Request)
-awesome-foss (source of truth)
-   ↓ (GitHub Actions validates + builds)
-dev/generated/projects.json
-   ↓ (Fetched at runtime)
-vcet-foss.github.io (website)
-```
-
-## Who Can Contribute
-
-Anyone! You don't need to be from VCET. If you have a project idea or want to improve an existing one, go for it.
-
-## Adding a Project
-
-### 1. Fork & clone
-
-```bash
-git clone https://github.com/YOUR-USERNAME/awesome-foss.git
-cd awesome-foss
-```
-
-### 2. Create your project folder
-
-```
-projects/your-project-slug/
-├── project.json
-└── README.md
-```
-
-- Folder name **must** match the `slug` in `project.json`
-- Use **lowercase kebab-case**: `my-cool-project` ✅ | `MyCoolProject` ❌
-
-### 3. Fill in `project.json` (see template below)
-
-### 4. Write a `README.md` for your project
-
-Include: what it does, tech stack, how to get started, and how to contribute.
-
-### 5. Test locally → Open PR
-
-## project.json Template
-
-```json
-{
-  "slug": "your-project-slug",
-  "name": "Your Project Name",
-  "tagline": "One line about what it does",
-  "description": "A longer description (10-500 characters).",
-  "status": "idea",
-  "difficulty": "beginner",
-  "tech_stack": ["React", "Python"],
-  "github_repo": "https://github.com/vcet-foss/your-project-slug",
-  "maintainers": [
-    {
-      "name": "Your Name",
-      "contact": "your@email.com"
-    }
-  ],
-  "looking_for_contributors": true,
-  "domain": ["Web"]
-}
-```
-
-## Field Reference
-
-| Field | Type | Required | Allowed Values |
-|-------|------|----------|----------------|
-| `slug` | string | ✅ | lowercase kebab-case, must match folder name |
-| `name` | string | ✅ | 1–100 characters |
-| `tagline` | string | ✅ | 1–150 characters |
-| `description` | string | ✅ | 10–500 characters |
-| `status` | string | ✅ | `active`, `dormant`, `idea` |
-| `difficulty` | string | ✅ | `beginner`, `intermediate`, `advanced` |
-| `tech_stack` | string[] | ✅ | At least one technology |
-| `github_repo` | string | ✅ | Must start with `https://github.com/` |
-| `maintainers` | object[] | ✅ | At least one `{ name, contact }` |
-| `looking_for_contributors` | boolean | ✅ | `true` or `false` |
-| `domain` | string[] | ❌ | One or more of: `Web`, `AI/ML`, `GenAI`, `Blockchain`, `IoT/Embedded` |
-
-## Testing Locally
-
-```bash
-node dev/scripts/build-projects.js
-```
-
-- ✅ means you're good to go
-- ❌ means something's wrong — the error message will tell you exactly what
-
-## Opening a PR
-
-1. Push to your fork
-2. Open a PR to `main`
-3. Title: **`Add project: your-project-name`**
-4. CI will automatically validate your `project.json`
-
-### Example PR
-
-**Title:** `Add project: LAN Share App`
-
-**Body:**
-```
-Adds the LAN Share App project — a peer-to-peer file sharing app for local networks.
-
-- [x] project.json passes validation
-- [x] README.md included
-- [x] Tested with `node dev/scripts/build-projects.js`
-```
-
-## Repo Structure
-
-```
-awesome-foss/
-├── projects/              ← One folder per project
-│   ├── lan-share-app/
-│   │   ├── project.json
-│   │   └── README.md
-│   └── ...
-├── dev/                   ← Build tooling
-│   ├── schemas/           ← JSON Schema for validation
-│   ├── scripts/           ← Build & validation scripts
-│   └── generated/         ← Auto-generated output (don't edit)
-├── .github/workflows/     ← CI pipeline
-├── CONTRIBUTING.md        ← You are here
-└── README.md              ← Project listing
-```
-
-## For Maintainers
-
-### Labels
-
-| Label | Use for |
-|-------|---------|
-| `new-project` | PRs that add a new project |
-| `needs-fix` | PRs with validation errors |
-| `approved` | Ready to merge |
-
-### Build locally
-
-```bash
-node dev/scripts/build-projects.js
-```
-
-Validates all `projects/*/project.json` and outputs `dev/generated/projects.json` + updates `README.md`.
-
-## What NOT to Do
-
-- ❌ Don't edit `dev/generated/projects.json` — it's auto-generated
-- ❌ Don't edit the `<!-- PROJECTS:START -->` section in `README.md` — it's auto-generated
-- ❌ Don't add random files to the root directory
-- ❌ Don't use spaces or uppercase in folder names
-
-## Getting Help
-
-- **GitHub Issues** — Open one if you're stuck
-- **Discussions** — Ask questions, share ideas
-- **Discord** — Join the VCET FOSS community server
-
-## Code of Conduct
-
-Be kind. Be respectful. We're all learning here.
-
-We follow the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
 
 ---
 
-Every project starts with a single commit. 🚀
+## Who Can Contribute?
+
+**Anyone!** You don't need to be from VCET. If you have a FOSS project to share, you're welcome here.
+
+---
+
+## How This Repository Works
+
+### The Workflow
+
+```
+1. Contributors follow the organization and star the repo
+   ↓
+2. Contributors fork the repository
+   ↓
+3. Add their project in projects/project-name/
+   ↓
+4. Submit a Pull Request
+   ↓
+5. GitHub Actions validates project.json automatically
+   ↓
+6. Maintainers review and merge
+   ↓
+7. Build script generates dev/generated/projects.json
+   ↓
+8. Website (vcet-foss.github.io) fetches and displays projects
+```
+
+### Automated Validation
+
+Every PR triggers CI checks that:
+- Validate `project.json` against the schema
+- Ensure folder names match slugs
+- Check for required fields
+- Verify JSON syntax
+
+### Build Process
+
+The build script (`dev/scripts/build-projects.js`):
+1. Validates all `project.json` files
+2. Generates `dev/generated/projects.json`
+3. Updates the project list in `README.md`
+
+---
+
+## Repository Structure
+
+```
+awesome-foss/
+├── projects/                    ← All project folders
+│   ├── lan-share-app/          ← Example project
+│   │   ├── project.json        ← Project metadata (required)
+│   │   └── README.md           ← Project docs (required)
+│   └── your-project/
+│       ├── project.json
+│       └── README.md
+│
+├── dev/
+│   ├── schemas/
+│   │   └── project.schema.json ← JSON Schema for validation
+│   ├── scripts/
+│   │   └── build-projects.js   ← Validation & build script
+│   ├── generated/
+│   │   └── projects.json       ← Auto-generated (DO NOT EDIT)
+│   └── assets/
+│       └── tutorial/            ← Video tutorials
+│
+├── .github/
+│   └── workflows/               ← CI/CD automation
+│
+├── CONTRIBUTING.md              ← This file
+├── ADD_PROJECT.md               ← Guide for adding projects
+└── README.md                    ← Main project listing (auto-updated)
+```
+
+### Important Rules
+
+✅ **DO:**
+- Add files only to `projects/your-slug/`
+- Follow the naming convention (lowercase kebab-case)
+- Follow the structure in [ADD_PROJECT.md](ADD_PROJECT.md)
+
+❌ **DON'T:**
+- Edit `dev/generated/projects.json` — it's auto-generated
+- Edit the project list in `README.md` between `<!-- PROJECTS:START -->` and `<!-- PROJECTS:END -->` — it's auto-updated
+- Add random files to the root directory
+- Use spaces or uppercase in folder names
+
+---
+
+## For Maintainers
+
+### Reviewing Pull Requests
+
+Use this checklist for each PR:
+
+- [ ] Folder name matches `slug` in `project.json`
+- [ ] `project.json` is valid JSON with all required fields
+- [ ] GitHub repo URL is valid and accessible
+- [ ] `README.md` is well-written and helpful
+- [ ] No sensitive information (API keys, passwords, tokens)
+- [ ] CI checks pass successfully
+- [ ] Project fits the FOSS/open-source criteria
+
+### PR Labels
+
+| Label | When to Use |
+|-------|-------------|
+| `new-project` | PR adds a new project |
+| `needs-fix` | Validation errors or issues need fixing |
+| `approved` | Ready to merge |
+| `question` | Need clarification from contributor |
+| `documentation` | Updates to docs or guides |
+
+### Running the Build Script Locally
+
+```bash
+# Clone the PR branch
+gh pr checkout <PR-NUMBER>
+
+# Validate and build
+node dev/scripts/build-projects.js
+```
+
+**What the script does:**
+1. Validates all `project.json` files against the JSON schema
+2. Checks folder names match slugs
+3. Generates `dev/generated/projects.json`
+4. Updates the project list in `README.md`
+
+### Merging Process
+
+1. **Review** the code and ensure all checklist items pass
+2. **Test** locally by checking out the branch and running the build script
+3. **Request changes** if needed, or approve if everything looks good
+4. **Merge** using "Squash and merge" to keep history clean
+5. **Delete** the source branch after merging
+
+### Maintaining Quality
+
+- Ensure projects are genuinely open-source (have proper licenses)
+- Check that maintainer contact information is valid
+- Verify the GitHub repository exists and is accessible
+- Look for clear project descriptions and documentation
+- Encourage contributors to include setup instructions
+
+---
+
+## Additional Resources
+
+- 📚 [GitHub Flow Guide](https://guides.github.com/introduction/flow/) — Learn about pull requests
+- 🎓 [Markdown Guide](https://www.markdownguide.org/) — Format your README beautifully
+- ✨ [Choose a License](https://choosealicense.com/) — Pick the right open-source license
+- 🔧 [JSON Validator](https://jsonlint.com/) — Check your `project.json` syntax
+
+---
+
+**Thank you for contributing to VCET FOSS! Together, we're building an amazing open-source community. 🚀**

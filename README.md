@@ -4,7 +4,9 @@
 
 > A curated directory of open-source projects built by VCET students.
 
-Want to add your project? See [CONTRIBUTING.md](CONTRIBUTING.md).
+Want to add your project? See [ADD_PROJECT.md](ADD_PROJECT.md).
+
+Want to contribute repo? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Projects
 
