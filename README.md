@@ -1,4 +1,14 @@
-![dev/assets/vcet-foss-light.svg](dev/assets/vcet-foss-light.svg)
+<p align="left">
+  <picture>
+    <source 
+      media="(prefers-color-scheme: dark)" 
+      srcset="https://raw.githubusercontent.com/vcet-foss/branding/refs/heads/main/asset/svg/vcet-foss-light.svg">
+    <img 
+      src="https://raw.githubusercontent.com/vcet-foss/branding/refs/heads/main/asset/svg/vcet-foss-dark.svg" 
+      alt="VCET FOSS LOGO" 
+      width="150">
+  </picture><br>
+</p>
 
 # Awesome FOSS [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
