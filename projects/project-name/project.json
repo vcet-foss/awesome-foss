@@ -1,0 +1,18 @@
+{
+  "slug": "your-project-slug",
+  "name": "Your Project Name",
+  "tagline": "One line about what it does",
+  "description": "A longer description (10-500 characters).",
+  "status": "status here (active, dormant, idea)",
+  "difficulty": "difficulty here (beginner, intermediate, advanced)",
+  "tech_stack": ["React", "Python"],
+  "github_repo": "https://github.com/your-project-repo",
+  "maintainers": [
+    {
+      "name": "Your Name",
+      "contact": "your@email.com"
+    }
+  ],
+  "looking_for_contributors": true,
+  "domain": ["Web", "AI/ML", "GenAI", "Blockchain", "IoT/Embedded"]
+}
